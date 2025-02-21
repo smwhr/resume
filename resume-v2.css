@@ -115,7 +115,7 @@ section.experience .org+.experience-period{
   float: right;
 }
 section.experience ul.competencies{
-  display:none;
+  color: #666;
 }
 section.experience .summary ul,
 section.experience ul.competencies
@@ -135,7 +135,7 @@ section.experience ul.competencies li{
   font-size: 0.8em;
 }
 section.experience ul.competencies li:before{
-  content: "#";
+  content: "# ";
 }
 
 section.education .org+.experience-period{
@@ -162,6 +162,10 @@ section.skills ul.competencies{
 }
 section.skills ul.competencies li{
   display: inline;
+}
+
+section.skills ul.competencies li:not(:last-child)::after{
+  content: " – ";
 }
 section.skills ul.competencies li .proficiency{
   font-size: 0.9em;
